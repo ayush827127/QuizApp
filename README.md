@@ -14,7 +14,7 @@ Before running the application, ensure you have the following installed on your 
 1. Clone the repository to your local machine:
 
     ```bash
-    git clone <repository_url>
+    git clone[ <repository_url>](https://github.com/ayush827127/QuizApp.git)
     ```
 
 2. Navigate into the project directory:
