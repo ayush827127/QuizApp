@@ -1,0 +1,48 @@
+<!-- public/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Node.js Quiz</title>
+</head>
+
+<body>
+  <h1>Node.js Quiz</h1>
+  <hr>
+  <form action="/submit" method="POST" id="quiz-form">
+    <!-- Questions and options will be rendered dynamically here -->
+    <div id="questions-container"></div>
+    <input type="submit" class="btn" value="Submit Answers">
+  </form>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $.get('/quiz', function (quizData) {
+        Object.keys(quizData).forEach(function (questionId) {
+          const question = quizData[questionId].question;
+          const options = quizData[questionId].options;
+
+          $('#questions-container').append(`<h3>${question}</h3>`);
+          options.forEach(function (option, index) {
+            $('#questions-container').append(` <label><input type="radio" name="${questionId}" value="${option}"/>${option}<br>  </label>`);
+          });
+        });
+      });
+    });
+    // Handle form submission
+    $('#quiz-form').submit(function (event) {
+      event.preventDefault(); // Prevent default form submission behavior
+      $.post('/submit', $(this).serialize(), function (response) {
+        alert('Your score is: ' + response.score);
+        // Clear the form
+      });
+      $(this)[0].reset();
+    });
+  </script>
+</body>
+
+</html>

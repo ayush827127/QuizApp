@@ -1,0 +1,92 @@
+{
+  "1": {
+    "question": "What is the primary use of the Node.js platform?",
+    "options": [
+      "Developing mobile applications",
+      "Building web servers",
+      "Creating desktop applications"
+    ],
+    "correctAnswer": "Building web servers"
+  },
+  "2": {
+    "question": "What is the purpose of the 'require' function in Node.js?",
+    "options": [
+      "To define a new variable",
+      "To import modules",
+      "To execute asynchronous functions"
+    ],
+    "correctAnswer": "To import modules"
+  },
+  "3": {
+    "question": "Which of the following best describes the event loop in Node.js?",
+    "options": [
+      "A mechanism for handling HTTP requests",
+      "A data structure for storing event listeners",
+      "A mechanism for managing asynchronous operations"
+    ],
+    "correctAnswer": "A mechanism for managing asynchronous operations"
+  },
+  "4": {
+    "question": "What is a callback function in the context of Node.js?",
+    "options": [
+      "A function that is executed after a database query completes",
+      "A function that is called when an error occurs",
+      "A function that is passed as an argument to another function and is invoked later"
+    ],
+    "correctAnswer": "A function that is passed as an argument to another function and is invoked later"
+  },
+  "5": {
+    "question": "What is npm in Node.js?",
+    "options": [
+      "Node Package Manager",
+      "Node Process Manager",
+      "Node Package Module"
+    ],
+    "correctAnswer": "Node Package Manager"
+  },
+  "6": {
+    "question": "Which module in Node.js provides utilities for working with file paths?",
+    "options": [
+      "path",
+      "fs",
+      "util"
+    ],
+    "correctAnswer": "path"
+  },
+  "7": {
+    "question": "What is the purpose of the 'fs' module in Node.js?",
+    "options": [
+      "To interact with the file system",
+      "To create web servers",
+      "To perform mathematical operations"
+    ],
+    "correctAnswer": "To interact with the file system"
+  },
+  "8": {
+    "question": "What does the term 'middleware' refer to in the context of Node.js?",
+    "options": [
+      "Software used for testing",
+      "Functions that have access to the request and response objects",
+      "A type of database management system"
+    ],
+    "correctAnswer": "Functions that have access to the request and response objects"
+  },
+  "9": {
+    "question": "What is the role of the 'Buffer' class in Node.js?",
+    "options": [
+      "To handle network communication",
+      "To manipulate binary data",
+      "To manage database connections"
+    ],
+    "correctAnswer": "To manipulate binary data"
+  },
+  "10": {
+    "question": "Which HTTP module in Node.js is commonly used to create web servers?",
+    "options": [
+      "http",
+      "url",
+      "querystring"
+    ],
+    "correctAnswer": "http"
+  }
+}
